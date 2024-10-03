@@ -1,0 +1,27 @@
+:root{
+    //Fonts
+    --font-primary                  : 'Comfortaa', Arial, sans-serif, cursive;
+    --font-secondary                : 'Montserrat', sans-serif;
+    --font-color                    : #fff;
+
+    //Theme colors
+    --primary-color		    	    : #47b8e0; // Main color. Used in most conponents and elements.
+    --primary-color-contrast	    : #2f7a96; // Hover effect on buttons
+    --body-bg-color                 : #242424;
+    --blured-color                  : rgba(0, 0, 0, 0.2);
+
+    // Event colors
+    --danger-color                  : #ff7473; // Delete button, Negative numbers in analytics
+    --danger-color-contrast	        : #DC4938; // Hover effect
+    --danger-color-light		    : #FF7171; // Field outline on error
+    --success-color                 : #219653; // Success color
+
+
+    //Sizes
+    --responsive-index              : (1vw + 1vh);
+    --header-height					: 80px;
+    --section-header-size           : 24px;
+    --section-mobile-padding        : 30px;
+    --section-desktop-padding       : 40px;
+
+}

@@ -1,0 +1,16 @@
+/* Mixin & Vars */
+@import 'utils/variables/theme';
+@import 'utils/variables/breakpoints';
+@import 'utils/normalize';
+@import 'utils/mixins/respond';
+@import 'utils/mixins/images';
+
+/* Component styles */
+@import 'components/preloader';
+@import 'components/navbar';
+@import 'components/back-to-top';
+
+/* Layout and sections styles */
+@import 'layout/header';
+@import 'layout/sections';
+@import 'layout/footer';
