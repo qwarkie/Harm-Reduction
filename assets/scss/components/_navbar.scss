@@ -11,14 +11,22 @@
         padding: 0 var(--section-desktop-padding);
     }
 
+    // .nav-logo{
+    //     height: calc(var(--header-height) - 20px);
+    //     width: 45px;
+    //     position: relative;
+    //     img{
+    //         @include img-contain()
+    //     }
+    // }
+
     .nav-logo{
-        height: calc(var(--header-height) - 20px);
-        width: 45px;
-        position: relative;
-        img{
-            @include img-contain()
+        .logo-text{
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }
+
     .nav-filter{
         width: 100%;
         height: inherit;
