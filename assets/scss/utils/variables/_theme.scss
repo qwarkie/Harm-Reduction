@@ -7,6 +7,7 @@
     //Theme colors
     --primary-color		    	    : #47b8e0; // Main color. Used in most conponents and elements.
     --primary-color-contrast	    : #2f7a96; // Hover effect on buttons
+    --spinner-bg-color              : #131522;
     --body-bg-color                 : #242424;
     --blured-color                  : rgba(0, 0, 0, 0.2);
 
@@ -19,6 +20,7 @@
 
     //Sizes
     --responsive-index              : (1vw + 1vh);
+    --spinner-size                  : 60px;
     --header-height					: 80px;
     --section-header-size           : 24px;
     --section-mobile-padding        : 30px;
