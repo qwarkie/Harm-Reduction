@@ -17,7 +17,7 @@
   transition: .3s linear background-color,.3s linear background-image, .3s linear color, .3s linear border, .3s linear box-shadow;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  background-image: url(../images/icons/arrow-black.png);
+  background-image: url(../media/images/icons/arrow-black.png);
   background-size: 15px 10px;
   background-position: center center;
   -webkit-text-size-adjust: 0%;
@@ -32,7 +32,7 @@
     &:hover{
       border: 1px solid var(--primary-color);
       box-shadow: 0px 0px 4px 2px var(--primary-color);
-      background-image: url(../images/icons/arrow.png);
+      background-image: url(../media/images/icons/arrow.png);
       background-color: #191d2196;
       color: #fff;
     }

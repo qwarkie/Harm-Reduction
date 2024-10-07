@@ -11,7 +11,7 @@
         left: calc(50% - (var(--spinner-size) / 2));
         width: var(--spinner-size);
         height: var(--spinner-size);
-        background: url('../images/utils/spinner.gif') no-repeat 50% 50%;
+        background: url('../media/images/utils/spinner.gif') no-repeat 50% 50%;
         background-size: cover;
       }
   }
