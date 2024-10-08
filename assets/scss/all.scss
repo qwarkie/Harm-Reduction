@@ -1,7 +1,9 @@
 /* Mixin & Vars */
+@import 'utils/fonts';
 @import 'utils/variables/theme';
 @import 'utils/variables/breakpoints';
 @import 'utils/normalize';
+@import 'utils/animations';
 @import 'utils/mixins/respond';
 @import 'utils/mixins/images';
 

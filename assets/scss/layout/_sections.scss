@@ -21,20 +21,6 @@
     line-height: 1;
     font-size: var(--section-header-size);
     font-weight: bold;
-
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      border: 10px solid transparent;
-      border-right-color: var(--primary-color);
-      border-bottom-color: var(--primary-color);
-      transform: translateX(-30px);
-    }
-
-    &:after {
-      transform: rotate(180deg) translateX(-10px);
-    }
   }
 }
 

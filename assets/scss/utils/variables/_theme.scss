@@ -1,15 +1,17 @@
 :root{
     //Fonts
-    --font-primary                  : 'Comfortaa', Arial, sans-serif, cursive;
+    --font-primary                  : 'Lexend', Arial, sans-serif, cursive;
     --font-secondary                : 'Montserrat', sans-serif;
+    --font-logo                     : "Teko", Arial, sans-serif;
     --font-color                    : #fff;
 
     //Theme colors
     --primary-color		    	    : #52C2C8; // Main color. Used in most conponents and elements.
     --primary-color-contrast	    : #2f7a96; // Hover effect on buttons
-    --spinner-bg-color              : #131522;
-    --body-bg-color                 : #242424;
-    --blured-color                  : rgba(0, 0, 0, 0.2);
+    --spinner-bg-color              : var(--body-bg-color);
+    --body-bg-color                 : #142227;
+    --navbar-bg-color               : rgb(0, 0, 0);
+    --navbar-bg-color-active        : rgb(18, 30, 34);
 
     // Event colors
     --danger-color                  : #ff7473; // Delete button, Negative numbers in analytics
