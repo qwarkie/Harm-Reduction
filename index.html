@@ -3,18 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cannabis Harm Reduction Study</title>
+    <title>Youth Harm Reduction Stories</title>
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="assets/css/main.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.min.css"/>
 
 </head>
 <body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="navigation-container">
+        <div class="nav-logo">
+          <h3 class="logo-text">Youth Harm Reduction</h3>
+          <!-- <img src="assets/images/logo.png" alt="YouthHarmReduction" /> -->
+        </div>
+  
+        <div class="navbox">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="navbar">
+            <a href="#intro-section" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#stories" class="nav-link">Stories</a>
+            <a href="#events" class="nav-link">Events</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#footer" class="nav-link">Contacts</a>
+          </nav>
+        </div>
+  
+        <div class="nav-filter"></div>
+    </div>
 
 
+    <header id="intro-section" class="section header-section">
+
+      <video id="intro-video" class="intro-video-box" preload="auto" poster="./assets/media/intro-poster.jpg" loop>
+        <source src="./assets/media/videos/Intro-Video.mp4" type="video/mp4">
+        Your browser does not support the video tag. 
+      </video>
+
+      <div class="intro-overlay">
+
+        <div class="overlay-content">
+            <h2 class="intro-heading">Young Adult Digital Storytelling</h2>
+            <h3 class="intro-subheading">Cannabis Harm Reduction Project</h3>
+            <button id="intro-play" class="intro-play-btn" type="button"></button>
+        </div>
+
+        <button id="scroll-down" class="scroll-down-btn"></button>
+
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <!-- Section About -->
+      <section id="about" class="section">
+        <div class="section-container">
+          <h2 class="section-header">About</h2>
+        </div>
+      </section>
+
+      <!-- Section Stories  -->
+      <section id="stories" class="section">
+        <div class="section-container">
+          <h2 class="section-header">Stories</h2>
+        </div>
+      </section>
+
+      <!-- Section Events -->
+      <section id="events" class="section">
+        <div class="section-container">
+          <h2 class="section-header">Events</h2>
+        </div>
+      </section>
+
+      <!-- Section Resources-->
+      <section id="resources" class="section">
+        <div class="section-container">
+          <h2 class="section-header">Resources</h2>
+        </div>
+      </section>
+
+    </main>
+
+    <button type="button" class="to-top-btn"></button>
+
+    <footer class="footer" id="footer">
+      <div class="footer-copyright">
+        All right reserved &copy;
+        <span class="copyright-year">2023</span>
+      </div>
+    </footer>
 
 
-    <script src="assets/js/utils/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/utils/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
