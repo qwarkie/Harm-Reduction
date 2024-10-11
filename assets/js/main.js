@@ -3,6 +3,7 @@ $(window).on("load", function () {
     $(".preloader").fadeOut().end().delay(400).fadeOut("slow");
 });
 
+AOS.init();
 
 $(document).ready(function () {
 
@@ -15,7 +16,7 @@ $(document).ready(function () {
     // Scroll down function 
     $('#scroll-down').on('click', function() {
       $('html, body').animate({
-          scrollTop: $(window).height()
+          scrollTop: $(window).height() - 80
       }, 1000); 
     });
 
@@ -77,7 +78,7 @@ $(document).ready(function () {
         setTimeout(() => {
           $(".burger").removeClass("open");
           $(".navbar").fadeOut(); // Close menu after animation completes
-        }, 1500); // Delay the closing of the menu by 1.5 seconds
+        }, 1000); // Delay the closing of the menu by 1.5 seconds
       }
     });
 
@@ -86,7 +87,7 @@ $(document).ready(function () {
       let scrollDistance = $(window).scrollTop();
 
       // Loop through all sections on the page
-      $(".section").each(function (i) {
+      $(".active-trigger").each(function (i) {
         if ($(this).position().top <= scrollDistance + 110) {
           // Remove 'active' class from all links
           $(".nav-link").removeClass("active");
@@ -106,7 +107,7 @@ $(document).ready(function () {
     });
 
     $(".to-top-btn").click(function () {
-      $("html,body").animate({ scrollTop: 0 }, 400);
+      $("html,body").animate({ scrollTop: 0 }, 1000);
     });
     
   });
