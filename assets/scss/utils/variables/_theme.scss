@@ -10,8 +10,7 @@
     --primary-color-contrast	    : #2f7a96; // Hover effect on buttons
     --spinner-bg-color              : var(--body-bg-color);
     --body-bg-color                 : #142227;
-    --navbar-bg-color               : rgb(0, 0, 0);
-    --navbar-bg-color-active        : rgb(18, 30, 34);
+    --navbar-bg-color               : rgba(9, 12, 14, 0.5);
 
     // Event colors
     --danger-color                  : #ff7473; // Delete button, Negative numbers in analytics
@@ -26,6 +25,6 @@
     --header-height					: 80px;
     --section-header-size           : 3em;
     --section-mobile-padding        : 30px;
-    --section-desktop-padding       : 40px;
+    --section-desktop-padding       : 100px;
 
 }

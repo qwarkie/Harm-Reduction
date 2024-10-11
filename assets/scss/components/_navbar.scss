@@ -8,17 +8,8 @@
 	position: fixed;
 	z-index: 1000;
     @include respond-to(desktop){
-        padding: 0 var(--section-desktop-padding);
+        padding: 0 50px;
     }
-
-    // .nav-logo{
-    //     height: calc(var(--header-height) - 20px);
-    //     width: 45px;
-    //     position: relative;
-    //     img{
-    //         @include img-contain()
-    //     }
-    // }
 
     .nav-logo{
         .logo-text{
@@ -32,14 +23,15 @@
         width: 100%;
         height: inherit;
         position: absolute;
-        transition: .3s linear opacity, .3s linear background-color;
+        transition: .3s linear backdrop-filter, .3s linear background-color;
         top: 0; left: 0;
-        background-color: var(--navbar-bg-color);
-        opacity: 0.3;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        opacity: 1;
         z-index: -1;
         &.active-nav{
-            opacity: 1;
-            background-color: var(--navbar-bg-color-active);
+            background-color: var(--navbar-bg-color);
+            backdrop-filter: blur(25px);
         }
     }
 }
@@ -54,6 +46,15 @@ nav.navbar{
     padding-top: var(--header-height);
     padding-left: 80px;
     background-color: var(--navbar-bg-color);
+    backdrop-filter: blur(25px);
+    text-align: center;
+    padding-left: 0;
+
+    @include respond-to(tablet){
+        padding-right: 100px;
+        text-align: right;
+    }
+
     @include respond-to(desktop){
         position: static;
         display: flex !important;
@@ -61,18 +62,21 @@ nav.navbar{
         width: auto;
         height: var(--header-height);
         background-color: transparent;
-        backdrop-filter: unset;
+        backdrop-filter: blur(0px);
         padding: 0;
     }
     .nav-link{
         display: block;
         color: #fff;
         text-transform: uppercase;
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: bold;
         margin-bottom: 20px;
         transition: .3s linear color;
         position: relative;
+        @include respond-to(tablet){
+            font-size: 2.5em;
+        }
         @include respond-to(desktop){
             margin: 0 15px;
             font-size: 1em;
