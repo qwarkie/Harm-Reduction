@@ -5,7 +5,15 @@ $(window).on("load", function () {
 
 AOS.init();
 
+function getIntroPoster() {
+  let posterPath = $('#intro-video').attr('poster');
+  
+  $('.video-thumb-mirror').css('background-image', `url(${posterPath})`);
+}
+
 $(document).ready(function () {
+
+  getIntroPoster()
 
   const swiper = new Swiper('.stories-slider', {
     // Pagination with dynamic bullets and clickable functionality
@@ -35,10 +43,10 @@ $(document).ready(function () {
     },
   
     // Autoplay configuration
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
 
     speed: 1000,
   
@@ -106,6 +114,7 @@ $(document).ready(function () {
           }
       }
     }
+
 
 
     // Smooth scroll when clicking on links
