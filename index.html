@@ -6,8 +6,10 @@
     <title>Youth Harm Reduction Stories</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/all.min.css"/>
 
 </head>
 <body>
@@ -29,8 +31,8 @@
           </div>
           <nav class="navbar">
             <a href="#intro-section" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
             <a href="#stories" class="nav-link">Stories</a>
+            <a href="#about" class="nav-link">About</a>
             <a href="#events" class="nav-link">Events</a>
             <a href="#resources" class="nav-link">Resources</a>
             <a href="#footer" class="nav-link">Contacts</a>
@@ -64,6 +66,93 @@
 
     <main class="main">
 
+      
+      <!-- Section Stories  -->
+      <section id="stories" class="section active-trigger" data-aos="fade-up" data-aos-duration="1500">
+        <h2 class="section-header">Stories</h2>
+        <div class="section-container" style="position: relative;">
+          <div class="swiper-box">
+            <div class="stories-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img src="./assets/media/images/photos/Stories/1.jpg" alt="Story" class="story-card-img">
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">John</h6>
+                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+                    <a href="./pages/story.html" class="story-link">
+                      Watch story
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img src="./assets/media/images/photos/Stories/2.jpg" alt="Story" class="story-card-img">
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">Kym</h6>
+                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+                    <a href="./pages/story.html" class="story-link">
+                      Watch story
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img src="./assets/media/images/photos/Stories/3.jpg" alt="Story" class="story-card-img">
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">Donna</h6>
+                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+                    <a href="./pages/story.html" class="story-link">
+                      Watch story
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img src="./assets/media/images/photos/Stories/1.jpg" alt="Story" class="story-card-img">
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">John</h6>
+                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+                    <a href="./pages/story.html" class="story-link">
+                      Watch story
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img src="./assets/media/images/photos/Stories/2.jpg" alt="Story" class="story-card-img">
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">John</h6>
+                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+                    <a href="./pages/story.html" class="story-link">
+                      Watch story
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      
       <!-- Section About -->
       <section id="about" class="section active-trigger" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="section-header">About Us</h2>
@@ -81,13 +170,6 @@
             </div>
 
           </div>
-        </div>
-      </section>
-
-      <!-- Section Stories  -->
-      <section id="stories" class="section active-trigger">
-        <div class="section-container">
-          <h2 class="section-header">Stories</h2>
         </div>
       </section>
 
@@ -119,6 +201,7 @@
 
     <script src="./assets/js/utils/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
