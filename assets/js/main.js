@@ -72,7 +72,7 @@ $(document).ready(function () {
     // Scroll down function 
     $('#scroll-down').on('click', function() {
       $('html, body').animate({
-          scrollTop: $(window).height() - 80
+          scrollTop: $(window).height() - 40
       }, 1000); 
     });
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
       $('.intro-overlay').fadeOut(500, function() {
           $('#intro-video').get(0).play(); // Start playing the video
           $('#intro-video').attr('controls', 'controls'); // Add video controls
-
+          $('.video-thumb-mirror').fadeOut()
           // Enable scroll tracking after video starts playing
           $(window).on('scroll', checkIntroVisibility);
       });
@@ -106,6 +106,7 @@ $(document).ready(function () {
               // Reset video to the start and show the poster
               video.currentTime = 0; // Reset video time to 0
               video.load(); // Reload the video to display the poster
+              $('.video-thumb-mirror').fadeIn()
           }
       } else {
           // Only hide overlay if video is NOT paused
