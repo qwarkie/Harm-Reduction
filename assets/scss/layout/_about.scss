@@ -8,12 +8,17 @@
 }
 
 .about-box{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     gap: 20px;
+
+    @include respond-to(tablet){
+      width: 90%;
+    }
+
     @include respond-to(desktop){
       gap: 30px 20px;
       grid-template-columns: repeat(2, 1fr);
@@ -26,13 +31,16 @@
       border: 4px solid var(--primary-color);
       border-radius: 15px;
       font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
 
       @include respond-to(tablet){
         font-size: 16px;
       }
 
       @include respond-to(desktop){
-        font-size: 18px;
+        font-size: 20px;
       }
 
       &:last-child{
