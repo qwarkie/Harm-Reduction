@@ -11,14 +11,6 @@
         padding: 0 50px;
     }
 
-    .nav-logo{
-        .logo-text{
-            font-family: var(--font-logo);
-            font-size: 30px;
-            text-transform: uppercase;
-        }
-    }
-
     .nav-filter{
         width: 100%;
         height: inherit;
@@ -33,6 +25,14 @@
             background-color: var(--navbar-bg-color);
             backdrop-filter: blur(25px);
         }
+    }
+}
+
+.nav-logo{
+    .logo-text{
+        font-family: var(--font-logo);
+        font-size: 30px;
+        text-transform: uppercase;
     }
 }
 
@@ -89,6 +89,19 @@ nav.navbar{
           &:hover{
             color: var(--primary-color-contrast);
           }
+        }
+    }
+
+    .nav-external{
+        @include respond-to(desktop){
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            transition: .3s linear background-color;
+            &:hover{
+                background-color: var(--primary-color);
+                color: #fff;
+            }
         }
     }
 }

@@ -116,14 +116,12 @@ $(document).ready(function () {
       }
     }
 
-
-
     // Smooth scroll when clicking on links
-    $(".nav-link").click(function (e) {
+    $(".anchor-scroll").click(function (e) {
       e.preventDefault(); // Prevent default link behavior
 
       // Remove 'active' class from all links and add it to the clicked link
-      $(".nav-link").removeClass("active");
+      $(".anchor-scroll").removeClass("active");
       $(this).addClass("active");
 
       // Smooth scroll to the corresponding section
@@ -148,9 +146,9 @@ $(document).ready(function () {
       $(".active-trigger").each(function (i) {
         if ($(this).position().top <= scrollDistance + 110) {
           // Remove 'active' class from all links
-          $(".nav-link").removeClass("active");
+          $(".anchor-scroll").removeClass("active");
           // Add 'active' class to the link corresponding to the current section
-          $(".nav-link").eq(i).addClass("active");
+          $(".anchor-scroll").eq(i).addClass("active");
         }
       });
     });
@@ -167,6 +165,24 @@ $(document).ready(function () {
     $(".to-top-btn").click(function () {
       $("html,body").animate({ scrollTop: 0 }, 1000);
     });
+
+
+    // Copy mail function
+    $('.copy-mail').on('click', function () {
+      const emailText = $('.email-link').text();
+
+      navigator.clipboard.writeText(emailText).then(() => {
+        $('.copy-success')
+          .fadeIn(300)  
+          .delay(500) 
+          .fadeOut(300); 
+      });
+    });
+
+
+
+    const currentYear = new Date().getFullYear(); // Получаем текущий год
+    $('.copyright-year').text(currentYear); // Вставляем год в <span>
     
   });
   
