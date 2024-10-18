@@ -135,28 +135,39 @@ $(document).ready(function () {
       let destination = $(elementClick).offset().top - 100; // Offset for proper display
       $("html, body").animate({ scrollTop: destination }, 1000);
 
-      // If menu is open on mobile, close it after scrolling
+      // Close mobile menu if open
       if ($(".burger").hasClass("open")) {
         setTimeout(() => {
           $(".burger").removeClass("open");
           $(".navbar").fadeOut(); // Close menu after animation completes
-        }, 1000); // Delay the closing of the menu by 1.5 seconds
+        }, 1000); // Delay the closing of the menu by 1 second
       }
     });
 
     // Track scrolling to change the active link based on the visible section
     $(window).on("scroll", function () {
       let scrollDistance = $(window).scrollTop();
-
+      
       // Loop through all sections on the page
       $(".active-trigger").each(function (i) {
-        if ($(this).position().top <= scrollDistance + 110) {
+        let sectionTop = $(this).offset().top - 100; // Top of the section
+        let sectionBottom = sectionTop + $(this).outerHeight(); // Bottom of the section
+
+        // Check if current scroll position is within the section or at the footer
+        if (scrollDistance >= sectionTop - 100 && scrollDistance < sectionBottom) {
           // Remove 'active' class from all links
           $(".anchor-scroll").removeClass("active");
           // Add 'active' class to the link corresponding to the current section
           $(".anchor-scroll").eq(i).addClass("active");
         }
       });
+
+      // Special case for footer
+      let footerTop = $("#footer").offset().top; // Top of the footer
+      if (scrollDistance + $(window).height() >= footerTop) {
+        $(".anchor-scroll").removeClass("active");
+        $(".anchor-scroll").last().addClass("active"); // Assuming the last link is for footer
+      }
     });
 
     //Back to top button function
