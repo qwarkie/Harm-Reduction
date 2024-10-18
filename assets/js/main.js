@@ -1,6 +1,8 @@
 // Preloader function
 $(window).on("load", function () {
     $(".preloader").fadeOut().end().delay(400).fadeOut("slow");
+
+    $('.bottom-parallax').parallax();
 });
 
 AOS.init();
@@ -76,16 +78,20 @@ $(document).ready(function () {
       }, 1000); 
     });
 
-    // Play button click event
-    $('#intro-play').on('click', function() {
-      // Fade out the overlay and play the video
-      $('.intro-overlay').fadeOut(500, function() {
+    function startIntro(){
+        // Fade out the overlay and play the video
+        $('.intro-overlay').fadeOut(500, function() {
           $('#intro-video').get(0).play(); // Start playing the video
           $('#intro-video').attr('controls', 'controls'); // Add video controls
           $('.video-thumb-mirror').fadeOut()
           // Enable scroll tracking after video starts playing
           $(window).on('scroll', checkIntroVisibility);
       });
+    }
+
+    // Play button click event
+    $('#intro-play').on('click', function() {
+      startIntro()
     });
 
     // Function to check if the intro section is in view
@@ -162,6 +168,18 @@ $(document).ready(function () {
         }
     });
 
+    $('.watch-intro').on('click', function () {
+      const scrollDuration = 2000; // Scroll duration in milliseconds
+    
+      // Animate scroll to the top of the page
+      $('html, body').animate({ scrollTop: 0 }, scrollDuration);
+    
+      // Call startIntro() after the scroll finishes
+      setTimeout(function () {
+        startIntro();
+      }, scrollDuration);
+    });
+
     $(".to-top-btn").click(function () {
       $("html,body").animate({ scrollTop: 0 }, 1000);
     });
@@ -179,10 +197,8 @@ $(document).ready(function () {
       });
     });
 
-
-
-    const currentYear = new Date().getFullYear(); // Получаем текущий год
-    $('.copyright-year').text(currentYear); // Вставляем год в <span>
+    const currentYear = new Date().getFullYear(); 
+    $('.copyright-year').text(currentYear); 
     
   });
   
