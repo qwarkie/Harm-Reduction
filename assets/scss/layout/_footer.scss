@@ -126,6 +126,7 @@
                 color: var(--primary-color);
                 white-space: nowrap;
                 font-family:  var(--font-primary);
+                user-select: none;
             }
         }
     }
