@@ -80,6 +80,10 @@
     
             &:hover{
                 box-shadow: 0px 0px 4px 2px var(--primary-color);
+
+                .email-ico{
+                    box-shadow: 0px 0px 2px 2px var(--primary-color);
+                }
             }
 
             .email-ico{
@@ -91,6 +95,8 @@
                 border-radius: 50%;
                 background-color: var(--primary-color);
                 margin: 0 10px 0 -2px;
+                transition: .3s linear box-shadow;
+                box-shadow: 0px 0px 4px 2px transparent;
 
                 svg{
                     width: 30px;

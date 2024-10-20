@@ -1,6 +1,6 @@
 #resources{
     .section-wrapper{
-        max-width: 1080px;
+        max-width: 900px;
     }
 }
 
@@ -60,9 +60,9 @@
 
 
 .link-container{
-    border-left: 2px solid var(--primary-color);
-    padding: 30px 10px 0 40px;
-    overflow: hidden;
+    // border-left: 2px solid var(--primary-color);
+    // padding: 30px 10px 0 40px;
+    // overflow: hidden;
 
     li{
         margin-bottom: 40px;
@@ -79,7 +79,7 @@
         transition: .3s linear background-color, .3s linear box-shadow;
 
         &::before{
-            content: '';
+            // content: '';
             position: absolute;
             left: -25%; top: 50%;
             width: 50%;
