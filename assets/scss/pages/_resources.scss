@@ -1,0 +1,109 @@
+#resources{
+    .section-wrapper{
+        max-width: 1080px;
+    }
+}
+
+
+.page-header{
+    width: 100%;
+    min-height: 250px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), 
+                url(../media/images/photos/resources-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
+
+    h2{
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+}
+
+.breadcrumbs{
+    padding: 25px;
+
+    ol {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+        
+        li{
+            color: #cbcbcb;
+
+            &::after {
+                content: "/";
+                margin-left: 8px;
+                color: #fff;
+            }
+
+            &:last-child::after {
+                content: "";
+            }
+        }
+    }
+
+    a{
+        color: var(--primary-color);
+        transition: .3s linear color;
+
+        &:hover{
+            color: var(--primary-color-contrast);
+        }
+    }
+}
+
+
+.link-container{
+    border-left: 2px solid var(--primary-color);
+    padding: 30px 10px 0 40px;
+    overflow: hidden;
+
+    li{
+        margin-bottom: 40px;
+    }
+
+    .source-link{
+        display: block;
+        position: relative;
+        color: var(--font-color);
+        background-color: var(--primary-color);
+        padding: 15px 50px 15px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 2px transparent;
+        transition: .3s linear background-color, .3s linear box-shadow;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: -25%; top: 50%;
+            width: 50%;
+            height: 2px;
+            background-color: var(--primary-color);
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            right: 15px; top: 27px;
+            width: 25px;
+            height: 25px;
+            background: url(../media/images/icons/link-ico.svg) no-repeat center center;
+            background-size: cover;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        &:hover{
+            background-color: var(--primary-color-contrast);
+            box-shadow: 0px 0px 10px 2px var(--primary-color-contrast);
+        }
+    }
+}
