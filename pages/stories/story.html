@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+    <title>Lucky Story</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="/assets/media/images/utils/favicon.ico"/>
     <link rel="stylesheet" href="/assets/css/all.min.css"/>
@@ -14,13 +14,49 @@
         <div class="spinner"></div>
     </div>
 
-    <header>
+    <header id="intro-section" class="header-section story-header">
+
+      <a href="/" class="back-home">Back to Home</a>
+
+      <video id="intro-video" class="intro-video-box" preload="auto" poster="/assets/media/intro-poster.jpg" loop>
+        <source src="/assets/media/videos/Intro-Video.mp4" type="video/mp4">
+        Your browser does not support the video tag. 
+      </video>
+
+      <div class="intro-overlay">
+
+        <div class="overlay-content">
+            <h2 class="intro-heading" data-aos="zoom-in" data-aos-duration="1500">Watch story of Lucky</h2>
+            <h3 class="intro-subheading" data-aos="zoom-in" data-aos-duration="1500">Cannabis Harm Reduction Project</h3>
+            <button id="intro-play" class="intro-play-btn" type="button"></button>
+        </div>
+
+        <button id="scroll-down" class="scroll-down-btn"></button>
+
+      </div>
+
+      <div class="video-thumb-mirror"></div>
 
     </header>
 
 
-    <main class="main">
+    <main class="main story-layout">
 
+      <div class="section-wrapper">
+        <nav aria-label="Breadcrumb" class="breadcrumbs">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Lucky Story</li>
+          </ol>
+        </nav>
+
+        <div class="text-container">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sint velit voluptas natus cupiditate beatae. Unde doloribus expedita quos quia, iste quidem cum repudiandae quibusdam, odit illum temporibus iusto qui!
+          Praesentium aperiam in tempore amet incidunt, minima nam autem iure, esse hic nisi eos nobis illum! Assumenda, aliquam optio ut provident quidem quibusdam libero, accusantium excepturi necessitatibus a, sunt tempore.
+          Incidunt aspernatur harum repudiandae esse sapiente dolorem repellendus commodi dolor eaque rerum ullam vitae necessitatibus ad mollitia perferendis, nulla maiores reiciendis cupiditate facilis iusto quia! Dignissimos dolore corrupti similique autem.</p>
+        </div>
+
+      </div>
     </main>
 
     
@@ -104,6 +140,7 @@
 
 
       <script src="/assets/js/utils/jquery-3.7.1.min.js"></script>
+      <script src="/assets/js/utils/plugins-setup.js"></script>
       <script src="/assets/js/main.js"></script>
     
 </body>
