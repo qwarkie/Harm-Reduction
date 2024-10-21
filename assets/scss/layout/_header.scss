@@ -16,13 +16,14 @@
   position: absolute;
   top: 0; left: 0;
   background: linear-gradient(180deg, rgb(0 0 0 / 80%) 0%, rgb(0 0 0 / 60%) 100%);
-  // background-color: rgba(24, 24, 24, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
 
   .overlay-content{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 
     .intro-heading {
@@ -31,51 +32,14 @@
       font-size: calc(var(--responsive-index) * 3.5);
       margin-bottom: 15px;
       text-transform: uppercase;
-      //font-family: 'Dosis'; //2
-      //font-family: 'Geologica' //3;
     }
   
     .intro-subheading {
       font-family: var(--font-primary);
       font-size: calc(var(--responsive-index) * 1.5);
       font-weight: 300;
-      //font-family: 'Geologica'; //3;
-      //font-family: 'Questrial';
-
     }
 
-    .intro-play-btn{
-      width: 100px;
-      height: 100px;
-      border: 3px solid var(--primary-color);
-      border-radius: 50%;
-      cursor: pointer;
-      margin-top: 50px;
-      background-color: transparent;
-      background-image: url(../media/images/icons/triangle.svg);
-      background-repeat: no-repeat;
-      background-position: bottom 5px center;
-      background-size: 75px 75px;
-      transform: rotate(90deg);
-      transition: .3s linear box-shadow;
-    
-      &:hover{
-        box-shadow: 0px 0px 8px 4px var(--primary-color)
-      }
-    }
-  }
-
-  .scroll-down-btn{
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    bottom: 20px;
-    left: calc(50% - 50px);
-    background: url(../media/images/icons/chevron.png) no-repeat center center;
-    background-size: 30px 15px;
-    transform: rotate(180deg);
-    cursor: pointer;
-    animation: float 2s infinite ease-in-out; 
   }
 
 }
@@ -89,7 +53,7 @@
   height: 100%;
   top: 100%;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   transform: scale(1, -1);
   filter: blur(6px);
   opacity: 0.3;

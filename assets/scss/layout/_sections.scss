@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   margin-top: 40px;
+  position: relative;
 
   &-wrapper {
     width: 100%;
@@ -31,13 +32,23 @@
   }
 }
 
-.footer-wrapper
+.medium-wrapper{
+  max-width: 900px;
+  padding: 0;
+}
 
 .theme-color{
   color: var(--primary-color);
 }
 
-
 .text-underline{
   text-decoration: underline;
+}
+
+.section-anchor{
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: 1px;
 }

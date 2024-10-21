@@ -1,5 +1,9 @@
 #stories{
-  padding: 80px 0;
+  padding: 20px 0;
+
+  @include respond-to(tablet){
+    padding: 80px 0;
+  }
 }
 
 #stories .swiper-slide{

@@ -1,0 +1,51 @@
+.breadcrumbs{
+    padding: 25px;
+    width: 100%;
+  
+
+    @include respond-to(desktop){
+        padding: 25px 0;
+    }
+
+    ol {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 8px;     
+        overflow: hidden;          
+        
+        li{
+            color: #cbcbcb;
+
+            &::after {
+                content: "/";
+                margin-left: 8px;
+                color: #fff;
+            }
+
+            &:last-child{
+                white-space: nowrap;       
+                overflow: hidden;          
+                text-overflow: ellipsis;   
+                &::after {
+                    content: "";
+                }
+            }
+            
+        }
+    }
+
+    a{
+        color: var(--primary-color);
+        transition: .3s linear color;
+
+        &:hover{
+            color: var(--primary-color-contrast);
+        }
+    }
+
+    &.with-padding{
+        padding: 25px;
+    }
+}
