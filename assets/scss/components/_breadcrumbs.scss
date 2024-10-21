@@ -1,11 +1,19 @@
 .breadcrumbs{
-    padding: 25px 0;
+    padding: 25px;
+    width: 100%;
+  
+
+    @include respond-to(desktop){
+        padding: 25px 0;
+    }
 
     ol {
+        width: 100%;
         list-style: none;
         padding: 0;
         display: flex;
-        gap: 8px;
+        gap: 8px;     
+        overflow: hidden;          
         
         li{
             color: #cbcbcb;
@@ -16,9 +24,15 @@
                 color: #fff;
             }
 
-            &:last-child::after {
-                content: "";
+            &:last-child{
+                white-space: nowrap;       
+                overflow: hidden;          
+                text-overflow: ellipsis;   
+                &::after {
+                    content: "";
+                }
             }
+            
         }
     }
 

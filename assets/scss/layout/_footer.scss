@@ -133,6 +133,13 @@
                 white-space: nowrap;
                 font-family:  var(--font-primary);
                 user-select: none;
+                opacity: 0;
+                visibility: hidden;
+
+                @include respond-to(desktop){
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }

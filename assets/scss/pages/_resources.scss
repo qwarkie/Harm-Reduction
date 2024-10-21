@@ -36,6 +36,12 @@
     // padding: 30px 10px 0 40px;
     // overflow: hidden;
 
+    padding: 0 20px;
+
+    @include respond-to(desktop){
+        padding: 0;
+    }
+
     li{
         margin-bottom: 40px;
     }
