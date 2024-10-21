@@ -6,6 +6,9 @@ $(window).on("load", function () {
 });
 
 
+$('#intro-play').fadeIn(1800);
+
+
 function getIntroPoster() {
   let posterPath = $('#intro-video').attr('poster');
   

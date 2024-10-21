@@ -24,40 +24,6 @@
     }
 }
 
-.breadcrumbs{
-    padding: 25px;
-
-    ol {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 8px;
-        
-        li{
-            color: #cbcbcb;
-
-            &::after {
-                content: "/";
-                margin-left: 8px;
-                color: #fff;
-            }
-
-            &:last-child::after {
-                content: "";
-            }
-        }
-    }
-
-    a{
-        color: var(--primary-color);
-        transition: .3s linear color;
-
-        &:hover{
-            color: var(--primary-color-contrast);
-        }
-    }
-}
-
 
 .link-container{
     // border-left: 2px solid var(--primary-color);
