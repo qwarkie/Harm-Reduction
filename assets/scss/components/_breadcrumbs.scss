@@ -1,5 +1,5 @@
 .breadcrumbs{
-    padding: 25px;
+    padding: 25px 0;
 
     ol {
         list-style: none;
@@ -29,5 +29,9 @@
         &:hover{
             color: var(--primary-color-contrast);
         }
+    }
+
+    &.with-padding{
+        padding: 25px;
     }
 }

@@ -42,8 +42,6 @@
 
   }
 
-
-
 }
 
 .video-thumb-mirror{
@@ -55,7 +53,7 @@
   height: 100%;
   top: 100%;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   transform: scale(1, -1);
   filter: blur(6px);
   opacity: 0.3;
