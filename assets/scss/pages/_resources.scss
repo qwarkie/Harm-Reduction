@@ -1,26 +1,32 @@
-#resources{
-    .section-wrapper{
-        max-width: 900px;
-    }
-}
-
-
 .page-header{
     width: 100%;
     min-height: 250px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), 
-                url(../media/images/photos/resources-bg.jpg);
+    background: url(../media/images/photos/resources-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--primary-color);
+    overflow: hidden;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+        z-index: 0;
+    }
 
     h2{
         font-size: 50px;
         text-transform: uppercase;
+        position: relative;
+        z-index: 5;
     }
 }
 
