@@ -1,30 +1,24 @@
-:root{
-    //Fonts
-    --font-primary                  : 'Lexend', Arial, sans-serif, cursive;
-    --font-logo                     : "Teko", Arial, sans-serif;
-    --font-color                    : #fff;
+:root {
+  //Fonts
+  --font-primary: "Lexend", Arial, sans-serif, cursive;
+  --font-logo: "Teko", Arial, sans-serif;
+  --font-color: #fff;
 
-    //Theme colors
-    --primary-color		    	    : #52C2C8; // Main color. Used in most conponents and elements.
-    --primary-color-contrast	    : #2f7a96; // Hover effect on buttons
-    --spinner-bg-color              : var(--body-bg-color);
-    --body-bg-color                 : #08070e;
-    --navbar-bg-color               : rgba(9, 12, 14, 0.5);
-    --footer-bg-color               : #060609;
+  //Theme colors
+  --primary-color: #52c2c8; // Main color. Used in most conponents and elements.
+  --primary-color-contrast: #2f7a96; // Hover effect on buttons
+  --spinner-bg-color: var(--body-bg-color);
+  --body-bg-color: #08070e;
+  --navbar-bg-color: rgba(9, 12, 14, 0.5);
+  // --footer-bg-color: #0f0f18;
+  --footer-bg-color: #0e0e13;
 
-    // Event colors
-    --danger-color                  : #ff7473; // Delete button, Negative numbers in analytics
-    --danger-color-contrast	        : #DC4938; // Hover effect
-    --danger-color-light		    : #FF7171; // Field outline on error
-    --success-color                 : #219653; // Success color
-
-
-    //Sizes
-    --responsive-index              : (1vw + 1vh);
-    --spinner-size                  : 60px;
-    --header-height					: 80px;
-    --section-header-size           : 3em;
-    --section-mobile-padding        : 30px;
-    --section-desktop-padding       : 100px;
-
+  //Sizes
+  --responsive-index: (1vw + 1vh);
+  --spinner-size: 60px;
+  --header-height: 80px;
+  --logo-size: 50px;
+  --section-header-size: 3em;
+  --section-mobile-padding: 30px;
+  --section-desktop-padding: 100px;
 }

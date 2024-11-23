@@ -1,127 +1,134 @@
-#stories{
+#stories {
   padding: 20px 0;
 
-  @include respond-to(tablet){
+  @include respond-to(tablet) {
     padding: 80px 0;
   }
 }
 
-#stories .swiper-slide{
-    border: 3px solid var(--primary-color);
+#stories .swiper-slide {
+  border: 3px solid var(--primary-color);
 
-    &-next{
-        &:hover{
-            .story-img-box .story-card-img{
-                transform: scale(1.1);
-            }
-    
-            .story-shadow{
-                transform: translateY(-10%);
-            }
-            
-            .story-content-box{
-                user-select: auto;
-                pointer-events: auto;
-            }
-    
-            .story-link{
-                pointer-events: auto;
-                &:hover{
-                    &:before{
-                        width: 95%;
-                    }
-                }
-            }
+  &-next {
+    &:hover {
+      .story-img-box .story-card-img {
+        transform: scale(1.1);
+      }
+
+      .story-shadow {
+        transform: translateY(-10%);
+      }
+
+      .story-content-box {
+        user-select: auto;
+        pointer-events: auto;
+      }
+
+      .story-link {
+        pointer-events: auto;
+        &:hover {
+          &:before {
+            width: 95%;
+          }
         }
+      }
     }
+  }
 }
 
-.story-img-box{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -2;
-    
-    .story-card-img{
-        width: inherit;
-        height: inherit;
-        object-fit: cover;
-        transition: linear 5s transform;
-        user-select: none;
-    }
+.story-img-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 
+  .story-card-img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    transition: linear 5s transform;
+    user-select: none;
+  }
 }
 
-.story-content-box{
-    width: 100%;
-    position: absolute;
-    bottom: 0; left: 0;
-    padding: 0 20px 30px 20px;
+.story-content-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px 30px 20px;
 
-    @include respond-to(desktop){
-        user-select: none;
-        pointer-events: none;
+  @include respond-to(desktop) {
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .story-name {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+
+  .story-text {
+    font-size: 0.9em;
+    margin: 5px 0 10px 0;
+  }
+
+  .story-link {
+    position: relative;
+    color: var(--primary-color);
+    padding-bottom: 8px;
+
+    @include respond-to(desktop) {
+      pointer-events: none;
     }
 
-    .story-name{
-        font-size: 2em;
+    &:before {
+      content: "";
+      height: 2px;
+      width: 50%;
+      background-color: var(--primary-color);
+      position: absolute;
+      bottom: 0px;
+      left: 3px;
+      transition: linear 0.4s width;
     }
 
-    .story-text{
-        font-size: 0.9em;
-        margin: 5px 0 10px 0;
+    // &:after{
+    //     content: '';
+    //     height: 10px;
+    //     width: 20px;
+    //     position: absolute;
+    //     top: 50%; right: -30px;
+    //     transform: translateY(-70%);
+    //     background: url(../media/images/icons/long-arrow.png) no-repeat center center;
+    //     background-size: 100% 100%;
+    // }
+
+    svg {
+      fill: var(--primary-color);
+      height: 28px;
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      right: -30px;
+      transform: translateY(-60%);
     }
-
-    .story-link{
-        position: relative;
-        color: var(--primary-color);
-        padding-bottom: 8px;
-
-        @include respond-to(desktop){
-            pointer-events: none;
-        }
-
-        &:before{
-            content: '';
-            height: 2px;
-            width: 50%;
-            background-color: var(--primary-color);
-            position: absolute;
-            bottom: 0px; left: 3px;
-            transition: linear .4s width;
-
-        }
-
-        // &:after{
-        //     content: '';
-        //     height: 10px;
-        //     width: 20px;
-        //     position: absolute;
-        //     top: 50%; right: -30px;
-        //     transform: translateY(-70%);
-        //     background: url(../media/images/icons/long-arrow.png) no-repeat center center;
-        //     background-size: 100% 100%;
-        // }
-
-        svg{
-            fill: var(--primary-color);
-            height: 28px;
-            width: 30px;
-            position: absolute;
-            top: 50%; right: -30px;
-            transform: translateY(-60%);
-        }
-
-    }
+  }
 }
 
-.story-shadow{
-    width: 100%;
-    height: 130%;
-    position: absolute;
-    bottom: -20%; left: 0;
-    z-index: -1;
-    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.9) 100%);
-    transition: linear 1s transform;
+.story-shadow {
+  width: 100%;
+  height: 130%;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  transition: linear 1s transform;
 }

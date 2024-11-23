@@ -17,8 +17,52 @@
         position: absolute;
         left: 0; top: 0;
         z-index: 5;
-        background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 95%) 100%);
+        background: linear-gradient(180deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 85%) 100%);
     }
+
+    .source-link{
+        display: block;
+        height: auto;
+        position: relative;
+        color: var(--font-color);
+        background-color: transparent;
+        padding: 20px 55px 20px 25px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 2px transparent;
+        font-size: 18px;
+        transition: .3s linear background-color, .3s linear box-shadow;
+        backdrop-filter: blur(10px);
+        white-space: nowrap;
+
+        @include respond-to(tablet) {
+            font-size: 22px;
+        }
+
+        @include respond-to(desktop) {
+            font-size: 26px;
+        }
+
+        &:hover{
+            box-shadow: 0px 0px 10px 2px var(--primary-color);
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            right: 15px; top: 51%;
+            width: 25px;
+            height: 25px;
+            background: url(../media/images/icons/link-ico.svg) no-repeat center center;
+            background-size: cover;
+            transform: translateY(-50%);
+            z-index: 1;
+
+            @include respond-to(tablet) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+}
 
 }
 
@@ -31,23 +75,28 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: white;
+    color: white;   
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+
 
     .content-header{
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 25px;
 
         @include respond-to(tablet){
-            font-size: 25px;
+            font-size: 30px;
+            margin-bottom: 35px;
         }
 
         @include respond-to(desktop){
-            font-size: 30px;
+            white-space: nowrap;
+            font-size: 44px;
+            margin-bottom: 40px;
         }
     }
 }

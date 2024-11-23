@@ -1,242 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youth Harm Reduction Stories</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/media/images/utils/favicon.ico"/>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/media/images/utils/favicon.ico"
+    />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/assets/css/all.min.css"/>
-
-</head>
-<body>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+  </head>
+  <body>
     <div class="preloader">
-        <div class="spinner"></div>
+      <div class="spinner"></div>
     </div>
 
     <div class="navigation-container">
-        <div class="nav-logo">
-          <h1 class="logo-text">Youth Harm Reduction</h1>
-          <!-- <img src="assets/images/logo.png" alt="YouthHarmReduction" /> -->
+      <div class="nav-logo">
+        <h1 hidden class="logo-text">Youth Harm Reduction</h1>
+        <img
+          class="logo-img"
+          src="assets/media/images/logo.png"
+          alt="YouthHarmReduction"
+        />
+      </div>
+
+      <div class="navbox">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-  
-        <div class="navbox">
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <nav class="navbar">
-            <a href="#intro-section" class="nav-link anchor-scroll active">Home</a>
-            <a href="#about" class="nav-link anchor-scroll">About</a>
-            <a href="#stories" class="nav-link anchor-scroll">Stories</a>
-            <a href="#events" class="nav-link anchor-scroll">Events</a>
-            <a href="#footer" class="nav-link anchor-scroll">Contacts</a>
-            <a href="/pages/resources.html" class="nav-link nav-external">Resources</a>
-          </nav>
-        </div>
-  
-        <div class="nav-filter"></div>
+        <nav class="navbar">
+          <a href="#intro-section" class="nav-link anchor-scroll active">Home</a>
+          <a href="#about" class="nav-link anchor-scroll">About</a>
+          <a href="#stories" class="nav-link anchor-scroll">Stories</a>
+          <a href="#events" class="nav-link anchor-scroll">Events</a>
+          <a href="#resources" class="nav-link anchor-scroll">Resources</a>
+          <a href="#footer" class="nav-link anchor-scroll nav-rounded contact-trigger">Contact</a>
+        </nav>
+      </div>
+
+      <div class="nav-filter"></div>
     </div>
 
-
     <header id="intro-section" class="header-section active-trigger">
-
-      <video id="intro-video" class="intro-video-box" preload="auto" poster="/assets/media/intro-poster.jpg" loop>
-        <source src="/assets/media/videos/Intro-Video.mp4" type="video/mp4">
-        Your browser does not support the video tag. 
+      <video
+        id="intro-video"
+        class="intro-video-box"
+        preload="auto"
+        poster="/assets/media/intro-poster.jpg"
+        loop
+      >
+        <source src="/assets/media/videos/Intro-Video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
 
       <div class="intro-overlay">
-
         <div class="overlay-content">
-            <h2 class="intro-heading" data-aos="zoom-in" data-aos-duration="1500">Young Adult Digital Storytelling</h2>
-            <h3 class="intro-subheading" data-aos="zoom-in" data-aos-duration="1500">Cannabis Harm Reduction Project</h3>
-            <!-- <button  class="intro-play-btn" type="button"></button> -->
+          <h2 class="intro-heading" data-aos="zoom-in" data-aos-duration="1500">
+            Cannabis Harm Reduction
+          </h2>
+          <h3
+            class="intro-subheading"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            Young Adult Digital Storytelling Project
+          </h3>
+          <!-- <button  class="intro-play-btn" type="button"></button> -->
 
-            <button type="button" id="intro-play" class="primary-btn with-l-ico watch-intro">
-              <span class="btn-ico-left">
-                <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933333 21.1666675" version="1.1" x="0px" y="0px"><g transform="translate(0,-280.06665)"><path style="opacity:1;fill:#FFFFFF;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08356888;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke" d="m 8.4666477,282.71249 a 1.9071424,1.9071424 0 0 0 -1.5724381,0.82819 l -4.6707064,8.08985 a 1.9071424,1.9071424 0 0 0 0,1.6e-4 1.9071424,1.9071424 0 0 0 0.06893,1.77582 1.9071424,1.9071424 0 0 0 1.5235488,0.94764 h 9.301165 a 1.9071424,1.9071424 0 0 0 1.523711,-0.94764 1.9071424,1.9071424 0 0 0 0.06893,-1.77598 l -4.660603,-8.07242 a 1.9071424,1.9071424 0 0 0 -1.5825415,-0.84562 z"/></g></svg>
-              </span>
-               Watch how the stories are made
-            </button>
+          <button
+            type="button"
+            id="intro-play"
+            class="primary-btn with-l-ico watch-intro"
+          >
+            <span class="btn-ico-left">
+              <svg
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16.933333 21.1666675"
+                version="1.1"
+                x="0px"
+                y="0px"
+              >
+                <g transform="translate(0,-280.06665)">
+                  <path
+                    style="
+                      opacity: 1;
+                      fill: #ffffff;
+                      fill-opacity: 1;
+                      fill-rule: nonzero;
+                      stroke: none;
+                      stroke-width: 0.08356888;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4;
+                      stroke-dasharray: none;
+                      stroke-dashoffset: 0;
+                      stroke-opacity: 1;
+                      paint-order: fill markers stroke;
+                    "
+                    d="m 8.4666477,282.71249 a 1.9071424,1.9071424 0 0 0 -1.5724381,0.82819 l -4.6707064,8.08985 a 1.9071424,1.9071424 0 0 0 0,1.6e-4 1.9071424,1.9071424 0 0 0 0.06893,1.77582 1.9071424,1.9071424 0 0 0 1.5235488,0.94764 h 9.301165 a 1.9071424,1.9071424 0 0 0 1.523711,-0.94764 1.9071424,1.9071424 0 0 0 0.06893,-1.77598 l -4.660603,-8.07242 a 1.9071424,1.9071424 0 0 0 -1.5825415,-0.84562 z"
+                  />
+                </g>
+              </svg>
+            </span>
+            Watch how the stories were made
+          </button>
+
+          <a href="https://shows.acast.com/co-created/empowering-youth-through-digital-storytelling" target="_blank" class="primary-btn with-l-ico spotify-link">
+            <span class="btn-ico-left">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25.009,1.982c-12.687,0 -23.009,10.322 -23.009,23.009c0,12.687 10.322,23.009 23.009,23.009c12.687,0 23.009,-10.321 23.009,-23.009c0,-12.688 -10.322,-23.009 -23.009,-23.009zM34.748,35.333c-0.289,0.434 -0.765,0.668 -1.25,0.668c-0.286,0 -0.575,-0.081 -0.831,-0.252c-2.473,-1.649 -6.667,-2.749 -10.167,-2.748c-3.714,0.002 -6.498,0.914 -6.526,0.923c-0.784,0.266 -1.635,-0.162 -1.897,-0.948c-0.262,-0.786 0.163,-1.636 0.949,-1.897c0.132,-0.044 3.279,-1.075 7.474,-1.077c3.5,-0.002 8.368,0.942 11.832,3.251c0.69,0.46 0.876,1.391 0.416,2.08zM37.74,29.193c-0.325,0.522 -0.886,0.809 -1.459,0.809c-0.31,0 -0.624,-0.083 -0.906,-0.26c-4.484,-2.794 -9.092,-3.385 -13.062,-3.35c-4.482,0.04 -8.066,0.895 -8.127,0.913c-0.907,0.258 -1.861,-0.272 -2.12,-1.183c-0.259,-0.913 0.272,-1.862 1.184,-2.12c0.277,-0.079 3.854,-0.959 8.751,-1c4.465,-0.037 10.029,0.61 15.191,3.826c0.803,0.5 1.05,1.56 0.548,2.365zM40.725,22.013c-0.373,0.634 -1.041,0.987 -1.727,0.987c-0.344,0 -0.692,-0.089 -1.011,-0.275c-5.226,-3.068 -11.58,-3.719 -15.99,-3.725c-0.021,0 -0.042,0 -0.063,0c-5.333,0 -9.44,0.938 -9.481,0.948c-1.078,0.247 -2.151,-0.419 -2.401,-1.495c-0.25,-1.075 0.417,-2.149 1.492,-2.4c0.185,-0.043 4.573,-1.053 10.39,-1.053c0.023,0 0.046,0 0.069,0c4.905,0.007 12.011,0.753 18.01,4.275c0.952,0.56 1.271,1.786 0.712,2.738z"></path></g></g>
+              </svg>
+            </span>
+            Hear how the stories were made              
+          </a>
         </div>
 
         <button id="scroll-down" class="scroll-down-btn"></button>
-
       </div>
 
       <div class="video-thumb-mirror"></div>
-
     </header>
 
     <main class="main">
-
       <!-- Section About -->
       <section id="about" class="section active-trigger">
-        <h2 class="section-header" data-aos="fade-zoom-in" data-aos-duration="1500">About the Project</h2>
+        <h2 class="section-header" data-aos="fade-zoom-in" data-aos-duration="2000">
+          About the Project
+        </h2>
         <div class="section-wrapper">
-          <div class="about-box">
-            <div class="about-text-box" data-aos="fade-up" data-aos-duration="1500">
-              <h5>Ultimately, this project aims to:</h5>
 
-              <ul>
-                <li>Build a deeper understanding of the realities of cannabis use among young adults and highlight their lived experiences.</li>
-                <li>Promote harm reduction strategies that are effective, accessible, and youth-friendly.</li>
-                <li>Influence public health approaches to be more inclusive and reflective of youth voices.</li>
-              </ul>
+          <h5 class="about-header" data-aos="fade-zoom-in" data-aos-duration="1500">This project was a partnership between <b>Dr. Rebecca Saah</b> and <b>Dr. Mike Lang</b> from the University of Calgary,<br> with facilitation from <a href="https://www.mikelangstories.com/">Mike Lang Stories</a> and <a href="https://www.krystleschofield.com/" target="_blank">Krystle Schofield Stories</a></h5>
 
+          <div class="about-partners-container">
+            <div class="partners-box" data-aos="fade-up" data-aos-duration="1500">
+              <a target="_blank" href="https://www.mikelangstories.com/" class="partner-link">
+                <div class="partner-box">
+                  <div class="partner-thumb">
+                    <img src="./assets/media/images/photos/about/Michael.jpg" alt="Mike Lang">
+                  </div>
+                  <p class="partner-name">Michael Lang</p>
+                  <img src="./assets/media/images/photos/about/Mike-Stories.png" alt="Mike Lang Stories">
+                </div>
+              </a>
+              <hr>
+              <a target="_blank" href="https://rebeccasaah.com" class="partner-link">
+                <div class="partner-box">
+                  <div class="partner-thumb">
+                    <img src="./assets/media/images/photos/about/Rebecca.jpg" alt="Rebecca Saah">
+                  </div>
+                  <p class="partner-name">Rebecca Saah</p>
+                  <div class="partner-visit-link">
+                    Visit website
+                  </div>
+                </div>
+              </a>
+              <hr>
+              <a target="_blank" href="https://www.krystleschofield.com/" class="partner-link">
+                <div class="partner-box">
+                  <div class="partner-thumb">
+                    <img src="./assets/media/images/photos/about/Krystle.jpg" alt="Krystle Schofield">
+                  </div>
+                  <p class="partner-name">Krystle Schofield</p>
+                  <img src="./assets/media/images/photos/about/Krystle-Stories.png" alt="Krystle Schofield Stories">
+                </div>
+              </a>
             </div>
-
-            <div class="about-text-box" data-aos="fade-up" data-aos-duration="1500">
-              <p>The project utilizes Digital Storytelling (DST), a participatory and creative process where participants produce 3-5 minute video stories using images, audio, video, and narration. DST is especially effective in youth-centered projects because it empowers young people to take control of their narratives.</p>
-              <br>
-              <P>This process encourages self-reflection and creative expression, helping participants explore the deeper meaning behind their cannabis use and the role harm reduction strategies play in their lives.</P>
-            </div>
-
-            <div class="about-text-box" data-aos="fade-up" data-aos-duration="1500">
-              <p>In <span class="text-underline">Spring 2024</span>, nine young adults from Alberta and Ontario took part in a two-day DST workshop. During the workshop, they created short films about their cannabis use and harm reduction experiences. Each story focuses on a meaningful moment related to cannabis use and concludes with practical harm reduction principles, helping other young people make safer, more informed decisions.</p>
-              <br>
-              <p>The stories co-created in this workshop are designed to engage peers, educators, and youth allies across Canada by providing real-life examples of harm reduction in action. Through sharing these stories, the project aims to spark conversations nationwide about how to better support young adults in making informed choices about cannabis. The stories will be widely disseminated via social media, film festivals, and community events to reach youth, educators, health professionals, and policymakers.</p>
-            </div>
-
           </div>
 
+          <div class="about-box">
+            <div class="about-text-box" data-aos="fade-up-right" data-aos-duration="1500">
+              <p>
+                In Spring 2024, nine young adults (aged 18-27) from Alberta and
+                Ontario came together in a Digital Storytelling (DST) workshop
+                to create short films exploring their experiences with cannabis.
+              </p>
+            </div>
+            <div class="about-text-box" data-aos="fade-up-left" data-aos-duration="1500">
+              <p>
+                Each story highlights a meaningful moment in their journey with
+                cannabis, concluding with practical harm reduction pri  nciples.
+              </p>
+            </div>
+            <div class="about-text-box" data-aos="fade-up-right" data-aos-duration="1500">
+              <p>
+                The stories developed in this workshop are designed to engage
+                peers, educators, and youth allies across Canada by highlighting
+                the diverse contexts and experiences of youth who use cannabis.
+              </p>
+            </div>
+            <div class="about-text-box" data-aos="fade-up-left" data-aos-duration="1500">
+              <p>
+                Focusing on lived experiences, this project shifts away from a
+                top-down education model to one where young people share their
+                own stories and knowledge about cannabis with their peers.
+              </p> 
+            </div>
+          </div>
         </div>
       </section>
 
-      
       <!-- Section Stories  -->
-      <section id="stories" class="section active-trigger" data-aos="fade-up" data-aos-duration="1500">
+      <section
+        id="stories"
+        class="section active-trigger"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div id="stories-section" class="section-anchor"></div>
-        <h2 class="section-header" data-aos="fade-zoom-in" data-aos-duration="1500">Stories</h2>
-        <div class="section-wrapper" style="position: relative;">
+        <h2
+          class="section-header"
+          data-aos="fade-zoom-in"
+          data-aos-duration="1500"
+        >
+          Stories
+        </h2>
+        <div class="section-wrapper" style="position: relative">
           <div class="swiper-box">
             <div class="stories-slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="story-img-box">
-                    <img src="/assets/media/images/photos/Stories/1.jpg" alt="Story" class="story-card-img">
+                    <img
+                      src="/assets/media/images/photos/stories/escape.png"
+                      alt="Story"
+                      class="story-card-img"
+                    />
                   </div>
                   <div class="story-content-box">
-                    <h6 class="story-name">John</h6>
-                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
-                    <a href="/pages/stories/story.html" class="story-link">
+                    <h6 class="story-name">Atlas</h6>
+
+                    <a
+                      href="/pages/stories/story-of-escape.html"
+                      class="story-link"
+                    >
                       Watch story
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"/></g></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
                     </a>
                   </div>
                   <div class="story-shadow"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="story-img-box">
-                    <img src="/assets/media/images/photos/Stories/2.jpg" alt="Story" class="story-card-img">
+                    <img
+                      src="/assets/media/images/photos/Stories/dana.png"
+                      alt="Story"
+                      class="story-card-img"
+                    />
                   </div>
                   <div class="story-content-box">
-                    <h6 class="story-name">Kym</h6>
-                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
-                    <a href="/pages/stories/story.html" class="story-link">
+                    <h6 class="story-name">Dana</h6>
+                    <a href="/pages/stories/dana-story.html" class="story-link">
                       Watch story
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"/></g></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
                     </a>
                   </div>
                   <div class="story-shadow"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="story-img-box">
-                    <img src="/assets/media/images/photos/Stories/3.jpg" alt="Story" class="story-card-img">
+                    <img
+                      src="/assets/media/images/photos/stories/alsa.png"
+                      alt="Story"
+                      class="story-card-img"
+                    />
                   </div>
                   <div class="story-content-box">
-                    <h6 class="story-name">Donna</h6>
-                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
-                    <a href="/pages/stories/story.html" class="story-link">
+                    <h6 class="story-name">Alsa</h6>
+
+                    <a href="/pages/stories/alsa-story.html" class="story-link">
                       Watch story
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"/></g></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
                     </a>
                   </div>
                   <div class="story-shadow"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="story-img-box">
-                    <img src="/assets/media/images/photos/Stories/1.jpg" alt="Story" class="story-card-img">
+                    <img
+                      src="/assets/media/images/photos/stories/callie.png"
+                      alt="Story"
+                      class="story-card-img"
+                    />
                   </div>
                   <div class="story-content-box">
-                    <h6 class="story-name">John</h6>
-                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
-                    <a href="/pages/stories/story.html" class="story-link">
+                    <h6 class="story-name">Callie</h6>
+
+                    <a href="/pages/stories/callie-story.html" class="story-link">
                       Watch story
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"/></g></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
                     </a>
                   </div>
                   <div class="story-shadow"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="story-img-box">
-                    <img src="/assets/media/images/photos/Stories/2.jpg" alt="Story" class="story-card-img">
+                    <img
+                      src="/assets/media/images/photos/stories/seven.png"
+                      alt="Story"
+                      class="story-card-img"
+                    />
                   </div>
                   <div class="story-content-box">
-                    <h6 class="story-name">John</h6>
-                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
-                    <a href="/pages/stories/story.html" class="story-link">
+                    <h6 class="story-name">Seven</h6>
+
+                    <a
+                      href="/pages/stories/seven-story.html"
+                      class="story-link"
+                    >
                       Watch story
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"/></g></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
                     </a>
                   </div>
                   <div class="story-shadow"></div>
                 </div>
-                
-                
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img
+                      src="/assets/media/images/photos/stories/lucky.png"
+                      alt="Lucky Story"
+                      class="story-card-img"
+                    />
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">Lucky</h6>
+
+                    <a
+                      href="/pages/stories/lucky-story.html"
+                      class="story-link"
+                    >
+                      Watch story
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img
+                      src="/assets/media/images/photos/stories/tanya.png"
+                      alt="Tanya Story"
+                      class="story-card-img"
+                    />
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">Tanya</h6>
+
+                    <a
+                      href="/pages/stories/tanya-story.html"
+                      class="story-link"
+                    >
+                      Watch story
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img
+                      src="/assets/media/images/photos/stories/josie.png"
+                      alt="Josie Story"
+                      class="story-card-img"
+                    />
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">Josie</h6>
+
+                    <a href="/pages/stories/josie-story.html" class="story-link">
+                      Watch story
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="story-img-box">
+                    <img
+                      src="/assets/media/images/photos/stories/jay.png"
+                      alt="Story"
+                      class="story-card-img"
+                    />
+                  </div>
+                  <div class="story-content-box">
+                    <h6 class="story-name">Jay</h6>
+
+                    <a href="/pages/stories/jay-story.html" class="story-link">
+                      Watch story
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <g>
+                          <path
+                            d="M18.707,12.707l-3,3a1,1,0,0,1-1.414-1.414L15.586,13H6a1,1,0,0,1,0-2h9.586L14.293,9.707a1,1,0,0,1,1.414-1.414l3,3A1,1,0,0,1,18.707,12.707Z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="story-shadow"></div>
+                </div>
               </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
-          
+
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </section>
-      
+
       <!-- Section Events -->
-      <section id="events" class="section active-trigger"  data-aos="fade-up" data-aos-duration="1500">
+      <section
+        id="events"
+        class="section active-trigger"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div id="events-section" class="section-anchor"></div>
-        <h2 class="section-header" data-aos="fade-zoom-in" data-aos-duration="1500">Our Events</h2>
+        <h2
+          class="section-header"
+          data-aos="fade-zoom-in"
+          data-aos-duration="1500"
+        >
+          Our Events
+        </h2>
         <div class="section-wrapper">
           <ul class="events-container">
-            <li class="event-box">
+            <!-- <li class="event-box">
               <a href="/pages/events/event.html" class="event-link">
                 <div class="event-tag-bar">
                   <div class="event-tag">Conference</div>
                   <div class="event-tag tag-option-2">Online</div>
                 </div>
                 <div class="event-thumb-box">
-                  <img src="/assets/media/intro-poster.jpg" alt="Event" class="event-img">
+                  <img
+                    src="/assets/media/intro-poster.jpg"
+                    alt="Event"
+                    class="event-img"
+                  />
                 </div>
                 <div class="event-content-box">
-                  <h6 class="event-header">European Behavioural Pharmacology Society</h6>
+                  <h6 class="event-header">
+                    European Behavioural Pharmacology Society
+                  </h6>
                   <p class="event-date">26 September, 2024</p>
                   <p class="event-location">Banff, Canada</p>
-                  <p class="event-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nesciunt accusamus non ratione qui repellendus, laboriosam reiciendis minus dolor fugit, eius fuga harum et, fugiat maiores nisi. Sunt, quia iure!</p>
+                  <p class="event-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat nesciunt accusamus non ratione qui repellendus,
+                    laboriosam reiciendis minus dolor fugit, eius fuga harum et,
+                    fugiat maiores nisi. Sunt, quia iure!
+                  </p>
                 </div>
               </a>
-            </li>
+            </li> -->
 
             <li class="event-box">
               <a href="/pages/events/event.html" class="event-link">
                 <div class="event-tag-bar">
                   <div class="event-tag">Event</div>
-                  <div class="event-tag tag-option-1">In Person</div>
+                  <div class="event-tag tag-option-2">Online</div>
                 </div>
                 <div class="event-thumb-box">
-                  <img src="/assets/media/intro-poster.jpg" alt="Event" class="event-img">
+                  <img
+                    src="/assets/media/images/photos/events/roll-with-it.png"
+                    alt="Roll With It Event"
+                    class="event-img"
+                  />
                 </div>
                 <div class="event-content-box">
-                  <h6 class="event-header">Kitchen Table Night</h6>
-                  <p class="event-date">28 Nov, 2024</p>
+                  <h6 class="event-header">Roll With It</h6>
+                  <p class="event-date">6 Nov, 2024</p>
                   <p class="event-location">Calgary, Canada</p>
-                  <p class="event-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nesciunt accusamus non ratione qui repellendus, laboriosam reiciendis minus dolor fugit, eius fuga harum et, fugiat maiores nisi. Sunt, quia iure!</p>
+                  <p class="event-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat nesciunt accusamus non ratione qui repellendus,
+                    laboriosam reiciendis minus dolor fugit, eius fuga harum et,
+                    fugiat maiores nisi. Sunt, quia iure!
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="event-box">
+              <a href="/pages/events/kitchen-table-nights.html" class="event-link">
+                <div class="event-tag-bar">
+                  <div class="event-tag">Event</div>
+                  <div class="event-tag tag-option-2">Online</div>
+                </div>
+                <div class="event-thumb-box">
+                  <img
+                    src="/assets/media/images/photos/events/kitchen-table-nights.png"
+                    alt="Event"
+                    class="event-img"
+                  />
+                </div>
+                <div class="event-content-box">
+                  <h6 class="event-header">Kitchen Table Nights</h6>
+                  <p class="event-date">25 Nov, 2024</p>
+                  <p class="event-location">Calgary, Canada</p>
+                  <p class="event-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat nesciunt accusamus non ratione qui repellendus,
+                    laboriosam reiciendis minus dolor fugit, eius fuga harum et,
+                    fugiat maiores nisi. Sunt, quia iure!
+                  </p>
                 </div>
               </a>
             </li>
@@ -245,16 +600,25 @@
               <a href="/pages/events/event.html" class="event-link">
                 <div class="event-tag-bar">
                   <div class="event-tag">Event</div>
-                  <div class="event-tag tag-option-1">In Person</div>
+                  <div class="event-tag tag-option-2">Online</div>
                 </div>
                 <div class="event-thumb-box">
-                  <img src="/assets/media/intro-poster.jpg" alt="Event" class="event-img">
+                  <img
+                    src="/assets/media/intro-poster.jpg"
+                    alt="Event"
+                    class="event-img"
+                  />
                 </div>
                 <div class="event-content-box">
                   <h6 class="event-header">Science in the Cinema</h6>
                   <p class="event-date">25 March, 2025</p>
                   <p class="event-location">Calgary, Canada</p>
-                  <p class="event-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nesciunt accusamus non ratione qui repellendus, laboriosam reiciendis minus dolor fugit, eius fuga harum et, fugiat maiores nisi. Sunt, quia iure!</p>
+                  <p class="event-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat nesciunt accusamus non ratione qui repellendus,
+                    laboriosam reiciendis minus dolor fugit, eius fuga harum et,
+                    fugiat maiores nisi. Sunt, quia iure!
+                  </p>
                 </div>
               </a>
             </li>
@@ -266,13 +630,22 @@
                   <div class="event-tag tag-option-1">In Person</div>
                 </div>
                 <div class="event-thumb-box">
-                  <img src="/assets/media/intro-poster.jpg" alt="Event" class="event-img">
+                  <img
+                    src="/assets/media/intro-poster.jpg"
+                    alt="Event"
+                    class="event-img"
+                  />
                 </div>
                 <div class="event-content-box">
                   <h6 class="event-header">Manitoba Harm Reduction Network</h6>
                   <p class="event-date">February, 2025</p>
                   <p class="event-location">Winnipeg, Canada</p>
-                  <p class="event-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nesciunt accusamus non ratione qui repellendus, laboriosam reiciendis minus dolor fugit, eius fuga harum et, fugiat maiores nisi. Sunt, quia iure!</p>
+                  <p class="event-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat nesciunt accusamus non ratione qui repellendus,
+                    laboriosam reiciendis minus dolor fugit, eius fuga harum et,
+                    fugiat maiores nisi. Sunt, quia iure!
+                  </p>
                 </div>
               </a>
             </li>
@@ -284,47 +657,51 @@
                   <div class="event-tag tag-option-2">Online</div>
                 </div>
                 <div class="event-thumb-box">
-                  <img src="/assets/media/intro-poster.jpg" alt="Event" class="event-img">
+                  <img
+                    src="/assets/media/intro-poster.jpg"
+                    alt="Event"
+                    class="event-img"
+                  />
                 </div>
                 <div class="event-content-box">
-                  <h6 class="event-header">Harm Reduction International in Bogota</h6>
+                  <h6 class="event-header">
+                    Harm Reduction International in Bogota
+                  </h6>
                   <p class="event-date">April, 2025</p>
                   <p class="event-location">Bogota, Colombia</p>
-                  <p class="event-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nesciunt accusamus non ratione qui repellendus, laboriosam reiciendis minus dolor fugit, eius fuga harum et, fugiat maiores nisi. Sunt, quia iure!</p>
+                  <p class="event-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat nesciunt accusamus non ratione qui repellendus,
+                    laboriosam reiciendis minus dolor fugit, eius fuga harum et,
+                    fugiat maiores nisi. Sunt, quia iure!
+                  </p>
                 </div>
               </a>
             </li>
-
           </ul>
         </div>
       </section>
 
-      <section class="parallax-section bottom-parallax">
-        
+      <section id="resources" class="parallax-section bottom-parallax active-trigger">
+        <div id="resources-section" class="section-anchor active-trigger"></div>
         <div class="content">
-          <h5 class="content-header">In Spring 2024, nine young adults created their own short films about cannabis use and harm reduction</h5>
-          <button type="button" class="primary-btn with-l-ico watch-intro">
-            <span class="btn-ico-left">
-              <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933333 21.1666675" version="1.1" x="0px" y="0px"><g transform="translate(0,-280.06665)"><path style="opacity:1;fill:#FFFFFF;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08356888;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke" d="m 8.4666477,282.71249 a 1.9071424,1.9071424 0 0 0 -1.5724381,0.82819 l -4.6707064,8.08985 a 1.9071424,1.9071424 0 0 0 0,1.6e-4 1.9071424,1.9071424 0 0 0 0.06893,1.77582 1.9071424,1.9071424 0 0 0 1.5235488,0.94764 h 9.301165 a 1.9071424,1.9071424 0 0 0 1.523711,-0.94764 1.9071424,1.9071424 0 0 0 0.06893,-1.77598 l -4.660603,-8.07242 a 1.9071424,1.9071424 0 0 0 -1.5825415,-0.84562 z"/></g></svg>
-            </span>
-             Watch how the stories are made
-          </button>
+          <h5 class="content-header">
+            Want to learn more about cannabis harm reduction?
+          </h5>
+          <a href="pages/resources.html" target="_blank" class="primary-btn source-link ">
+            Get Resources 
+          </a>
         </div>
-
       </section>
-
     </main>
 
     <button type="button" class="to-top-btn"></button>
 
-    <footer class="footer" id="footer">
-
+    <footer class="footer active-trigger" id="footer">
       <div class="section-wrapper">
-
         <div class="footer-container">
           <div class="nav-logo">
-            <h3 class="logo-text">Youth Harm Reduction</h3>
-            <!-- <img src="assets/images/logo.png" alt="YouthHarmReduction" /> -->
+            <img class="logo-img" src="assets/media/images/logo.png" alt="YouthHarmReduction"/>
           </div>
 
           <div class="mail-container">
@@ -334,14 +711,15 @@
               <a href="mailto:rebecca.saah@ucalgary.ca" class="email-link">
                 <span class="email-ico">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
-                    <path d="M 10 8 C 6.86 8 4.2795313 10.42 4.0195312 13.5 L 24 24.289062 L 43.980469 13.5 C 43.720469 10.42 41.14 8 38 8 L 10 8 z M 4 16.890625 L 4 34 C 4 37.31 6.69 40 10 40 L 38 40 C 41.31 40 44 37.31 44 34 L 44 16.890625 L 24.710938 27.320312 C 24.490938 27.440312 24.25 27.5 24 27.5 C 23.75 27.5 23.509062 27.440313 23.289062 27.320312 L 4 16.890625 z"></path>
+                    <path
+                      d="M 10 8 C 6.86 8 4.2795313 10.42 4.0195312 13.5 L 24 24.289062 L 43.980469 13.5 C 43.720469 10.42 41.14 8 38 8 L 10 8 z M 4 16.890625 L 4 34 C 4 37.31 6.69 40 10 40 L 38 40 C 41.31 40 44 37.31 44 34 L 44 16.890625 L 24.710938 27.320312 C 24.490938 27.440312 24.25 27.5 24 27.5 C 23.75 27.5 23.509062 27.440313 23.289062 27.320312 L 4 16.890625 z"></path>
                   </svg>
                 </span>
                 rebecca.saah@ucalgary.ca
               </a>
               <button type="button" class="copy-mail">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                  <path d="M 18.5 5 C 15.480226 5 13 7.4802259 13 10.5 L 13 32.5 C 13 35.519774 15.480226 38 18.5 38 L 34.5 38 C 37.519774 38 40 35.519774 40 32.5 L 40 10.5 C 40 7.4802259 37.519774 5 34.5 5 L 18.5 5 z M 18.5 8 L 34.5 8 C 35.898226 8 37 9.1017741 37 10.5 L 37 32.5 C 37 33.898226 35.898226 35 34.5 35 L 18.5 35 C 17.101774 35 16 33.898226 16 32.5 L 16 10.5 C 16 9.1017741 17.101774 8 18.5 8 z M 11 10 L 9.78125 10.8125 C 8.66825 11.5545 8 12.803625 8 14.140625 L 8 33.5 C 8 38.747 12.253 43 17.5 43 L 30.859375 43 C 32.197375 43 33.4465 42.33175 34.1875 41.21875 L 35 40 L 17.5 40 C 13.91 40 11 37.09 11 33.5 L 11 10 z"></path>
+                  <path d="M 18.5 5 C 15.480226 5 13 7.4802259 13 10.5 L 13 32.5 C 13 35.519774 15.480226 38 18.5 38 L 34.5 38 C 37.519774 38 40 35.519774 40 32.5 L 40 10.5 C 40 7.4802259 37.519774 5 34.5 5 L 18.5 5 z M 18.5 8 L 34.5 8 C 35.898226 8 37 9.1017741 37 10.5 L 37 32.5 C 37 33.898226 35.898226 35 34.5 35 L 18.5 35 C 17.101774 35 16 33.898226 16 32.5 L 16 10.5 C 16 9.1017741 17.101774 8 18.5 8 z M 11 10 L 9.78125 10.8125 C 8.66825 11.5545 8 12.803625 8 14.140625 L 8 33.5 C 8 38.747 12.253 43 17.5 43 L 30.859375 43 C 32.197375 43 33.4465 42.33175 34.1875 41.21875 L 35 40 L 17.5 40 C 13.91 40 11 37.09 11 33.5 L 11 10 z" ></path>
                 </svg>
 
                 <span class="copy-success">Mail Copied!</span>
@@ -350,56 +728,42 @@
           </div>
 
           <div class="social-container">
-            <h6 class="container-header">Or subscribe on our social networks</h6>
+            <h6 class="container-header">
+              Or subscribe on our social networks
+            </h6>
 
             <ul class="social-box">
               <li>
-                <a href="https://www.youtube.com/" class="social-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                    <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                <a href="https://www.youtube.com/@seethelivesproject1832/featured" class="social-link" >
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" >
+                    <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z" ></path>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/" class="social-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-                    <path d="M32,6C17.641,6,6,17.641,6,32c0,14.359,11.641,26,26,26s26-11.641,26-26C58,17.641,46.359,6,32,6z M25,44h-5V26h5V44z M22.485,24h-0.028C20.965,24,20,22.888,20,21.499C20,20.08,20.995,19,22.514,19c1.521,0,2.458,1.08,2.486,2.499 C25,22.887,24.035,24,22.485,24z M44,44h-5v-9c0-3-1.446-4-3-4c-1.445,0-3,1-3,4v9h-5V26h5v3c0.343-0.981,1.984-3,5-3c4,0,6,3,6,8 V44z"></path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/" class="social-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" class="social-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                <a href="https://www.instagram.com/CannabisHarmRedux" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30" >
                     <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
                   </svg>
                 </a>
               </li>
             </ul>
-
           </div>
         </div>
-
-
+      </div>
+      <div class="fund-banner">
+        <p>
+          This project was supported by an arm's length research grant from the
+          Ontario Cannabis Store’s Social Impact Fund (Government of Ontario)
+        </p>
       </div>
 
-      <div class="footer-copyright">
-        All rights reserved &copy;&thinsp;
-        <span class="copyright-year">2024</span>
-      </div>
     </footer>
-
 
     <script src="/assets/js/utils/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/js/utils/plugins-setup.js"></script>
     <script src="/assets/js/main.js"></script>
-</body>
+  </body>
 </html>

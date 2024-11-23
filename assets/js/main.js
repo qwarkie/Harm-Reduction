@@ -114,12 +114,11 @@ $(document).ready(function () {
           $(".anchor-scroll").eq(i).addClass("active");
         }
       });
-
-      // Special case for footer
-      let footerTop = $("#footer").offset().top; // Top of the footer
-      if (scrollDistance + $(window).height() >= footerTop) {
+        // Special case for footer
+      let resourcesTop = $("#resources").offset().top; // Top of the footer
+      if (scrollDistance >= resourcesTop) {
         $(".anchor-scroll").removeClass("active");
-        $(".anchor-scroll").last().addClass("active"); // Assuming the last link is for footer
+        $('a[href="#resources"]').addClass("active"); // Assuming the last link is for footer
       }
     });
 
@@ -146,6 +145,15 @@ $(document).ready(function () {
 
     $(".to-top-btn").click(function () {
       $("html,body").animate({ scrollTop: 0 }, 1000);
+    });
+
+    $(".contact-trigger").click(function () {
+
+      $(".email-link").css('box-shadow', '0px 0px 15px 2px #52c2c8')
+      setTimeout(function () {
+        $(".email-link").css('box-shadow', '')
+      }, 2500);
+      
     });
 
 
